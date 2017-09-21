@@ -1,20 +1,76 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Header/Footer Page -->
+<header>
+  <nav class="my-theme navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="logo" [routerLink]="['/home']"><img src="../assets/images/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-header " id="navbarTogglerDemo02">
+        <ul class="row navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/about']" class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/services']" class="nav-link" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/news']" class="nav-link" href="#">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/contact']" class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+  </nav>
+</header>
+<router-outlet></router-outlet>
+
+<footer>
+
+  <nav class="my-theme-dark nav flex-column">
+
+    <div class="container">
+      <div class="row">
+        <h6 class="col-sm-3 footer-link" style="margin-top: 1rem;">
+          <a [routerLink]="['/home']" class="nav-link" href="#">HOME</a>
+          <a [routerLink]="['/about']" class="nav-link" href="#">ABOUT US</a>
+          <a [routerLink]="['/services']" class="nav-link" href="#">SERVICES</a>
+          <a [routerLink]="['/news']" class="nav-link" href="#">NEWS</a>
+          <a [routerLink]="['/contact']" class="nav-link" href="#">CONTACT</a>
+        </h6>
+        <div class="col-sm-6">
+          <h4>CONTACT US</h4>
+          <p></p>
+          <h5>Email: xyz@bigmove.com</h5>
+          <h5>Phone: +1-000-000-000</h5>
+          <h5>Mail: 123 Street, Ontario, Canada, A2A 2A2</h5>
+
+        </div>
+        <div class="col-sm-3" style="border-bottom:none;">
+          <h4>NEWSLETTER</h4>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter E-mail">
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class=" navbar bottom navbar-light bg-light">
+
+    <span>Copyright © All Rights Reserved</span>
+  </nav>
+</footer>
