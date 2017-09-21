@@ -1,6 +1,6 @@
 
 ## Angular2-Ng2Bootstrap-Demo
-Its a Angular 2 seed project created with Angular CLI. It includes some common libraries:
+Its a Angular 2 seed project created with Angular CLI. It includes libraries:
 
 • [Bootstrap](http://getbootstrap.com/)
 
